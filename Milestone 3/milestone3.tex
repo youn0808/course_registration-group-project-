@@ -1,0 +1,192 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{pdfpages}
+
+\begin{document}
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for horizontal lines, change thickness here
+	
+	\center % Centre everything on the page
+	
+	%------------------------------------------------
+	%	Headings
+	%------------------------------------------------
+	
+	\textsc{\LARGE University of Manitoba}\\[1.5cm] % Main heading such as the name of your university/college
+	
+	\begin{figure}
+	    \centering
+	    \includegraphics[width=1in]{uofmlogo.png}
+	    \label{fig:uofm}
+	\end{figure}
+	
+	\textsc{\Large COMP 3020}\\[0.5cm] % Major heading such as course name
+	
+	\textsc{\large Human Computer Interaction I}\\[0.5cm] % Minor heading such as course title
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\HRule\\[0.4cm]
+	
+	{\huge\bfseries Group 20: Milestone 3}\\[0.4cm] % Title of your document
+	
+	\HRule\\[1.5cm]
+	
+	%------------------------------------------------
+	%	Author(s)
+	%------------------------------------------------
+	
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushleft}
+			\large
+			\textit{Authors}\\
+			Skylar \textsc{Greenslade}, 7795032\\
+			Sanjay \textsc{Abraham}, 7793952\\
+			Seunghwan \textsc{Youn}, 7846681
+			
+		\end{flushleft}
+	\end{minipage}
+	~
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushright}
+			\large
+			\textit{Professor}\\
+			Dr. Jim \textsc{Young} % Supervisor's name
+		\end{flushright}
+	\end{minipage}
+
+	
+	\vfill\vfill\vfill % Position the date 3/4 down the remaining page
+	
+	{\large\today} % Date, change the \today to a set date if you want to be precise
+
+	\vfill % Push the date up 1/4 of the remaining page
+	
+\end{titlepage}
+\newpage
+
+
+\section{Project Description}
+%short description how the prototype was built and the major features that are exposed in the interface.(include small screenshots where appropriate). Showcase strengths, and sections we are proud of.
+Our group's high fidelity prototype focused on the main interface and interaction of the design we created. Using the requirements and user research gathered, as well as considering the in-depth ideas explored in Milestone 2, our group determined what the ideal design would be. One main screen would show the current list of classes the user is considering, in the order of priority that they preferred them to be scheduled. They would be able to add classes from this screen, as well as see the possible schedules created by the program from the classes that they added. More detailed class information was also a part of the design, but would be seen by scrolling down on the page, unlike the rest of the aspects which would all be visible at once on a full-screen display.
+
+\subsection{Creation Process}
+
+Deciding on a design was the first step in creating the prototype. As discussed in previous milestones, many potential designs have been considered by our group, and contributed to creating this design. Iterating on ideas through the knowledge gained in Milestone 2, a general design was agreed upon, and should further work be done on the project, more aspects and features included in this prototype created will be evaluated. Through our user research, we found that most students, regardless of the method of scheduling allowed, started by trying to schedule the class most important to them, then proceeded with progressively less important classes until they filled out a schedule. All of the schedules which included the most important classes were considered, so we decided to focus on this with our interface. Classes that the user would like to enroll in can be added to a list, and rearranged based on their importance to the user. The program would then produce all possible schedules, resolving conflicts according to the priorities determined by the user. The user can then view the schedules, and adjust their priorities accordingly, creating the main usability cycle.
+\newline
+\newline
+To create the prototype, our group first focused on visually creating the main interface, then adding features to it. The core functionality of adding drag-and-droppable classes to a list was important to have, as well as the visualization of the schedules available. A small database of available classes was created for the sake of testing the prototype. A fully developed version of this project would include all possible classes and labs, but for the scope of this milestone, the selection was limited, and labs were "built-in" to the lecture sections. To add pre-created schedules to match the possibilities of even a few classes was a significant task, so our group created a function to create schedules based on the actual list created by the user. This allowed for generating many possible schedules, and changing or adding the classes in our database without extra work. Having these parts created also served to demonstrate prioritizing classes and adding classes in depth, which were two major tasks outlined previously.
+\newline
+\newline
+The left column of the display housed a search bar which could be used to add classes to the schedule. Once added, they would appear in order in the column, represented by labelled cards beneath the search bar. This would indicate the priority of the classes as well. As the classes were added, they would be included in the main schedule, viewable to the right of the column. If more than one possible schedule existed, the user would be able to select their various options. any classes not included in the schedule would have an indication on their card in the priority column, and each classes card would be colour coded by priority to match the visualization on the schedule. Clicking on these cards would also expand them to show the individual sections available for each class, and some basic information about them.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=14cm]{"Milestone 3/borealis1".png}
+    \caption{Screenshot of prototype populated with example courses}
+    \label{fig:my_label}
+\end{figure}
+\noindent
+\newline
+Once the aforementioned parts were completed, a part of the page to display detailed information was created. The goal of this in the prototype was not to have in-depth functionality, but to express how the information could be accessed and viewed. Prototyping this on a computer will allow informed decisions to be made, compared to a more general approach taken with previous prototyping methods. when a class's card is expanded to view the basic information, a button is available to view all of the detailed and in depth information. clicking on this will scroll the right hand side of the page down to display the detailed information for that class. The user can simply scroll between the schedule and the detailed information as they please, but they can always have access to their priority list, and make changes based on any information relevant to them. In our prototype, it was not feasible to display accurate detailed information for every class, so an example page was created with static information for demonstration. It does not contain all of the features that a future design may entail, but for the purposes of understanding the interface, and gaining more feedback on the design, it will be more than sufficient.
+\newline
+\newline
+As not all features and details could be fully implemented for this prototype, our group decided to make the main functionality clear with a splash card that gives information on startup. This information briefly describes how to start using the design, and how the priority system works, and can be brought up by the user at any time with a press of the information icon. Based on our research, we do not expect that this will be necessary to be reviewed, but the feature was included as a cautionary measure. A similar feature would exist in a final version of the software, as informed by further prototyping and research.
+
+
+\subsection{Major Features}
+The major features of this prototype were the ability to add classes to a planner, prioritize classes using a drag-and-drop interface, view possible schedules based on the priority list, and view detailed information about classes. Each of these features and their depth of implementation are discussed in this section.
+
+\subsubsection{Adding Classes}
+
+Finding classes to add in other systems that are available to users is not very simple. Our research showed that many people are frustrated with complicated designs that take many steps, and want to look up classes by course codes. In response to this, we created a search bar, which will suggest classes based on what the user types. This proved to be an elegant solution in previous prototypes, and implementing it in this prototype will show how useful it is. For example, the user typing "Math 1" will show available 1000 level math classes. As the user types, suggestions are updated, and once a class is either typed or selected, it can be added to the planner's priority list with either the adjacent "+" button, or by pressing "enter". The user immediately sees the relevant card appear in their priority list, and the search bar is cleared and ready to be used again. Future iterations of this design may include more functionality such as searching by instructor name, or a course's full title, but these are auxiliary features, and were not deemed necessary for this prototype, in accordance with the research and prototyping already performed.
+\newline
+\newline
+A natural extension of adding classes is removing classes. The motivation to remove a class from a planner comes from a user realizing they do not wish to schedule a class after viewing more information about it, after adding a class by mistake, or by simply changing their minds. Each class's card has a trash can icon on it to symbolize deleting it. In previous research this was found to be universally understood. Mousing over the icon highlights it in red to indicate the action, and clicking on it removes the card. any cards removed can be added again as simply as typing in the code once more and pressing the add ("+") button.
+
+\subsubsection{Prioritizing Classes}
+To accommodate the natural process students use when creating a schedule, the classes that are added are prioritized in the order that they are added. If there is any conflict between classes, the class with the higher priority is scheduled, and the lower priority class is excluded. Although a user typically will add classes in the order they want, many factors can change their minds, or they may realize that they do not actually view the importance of the classes they added how they thought they might. Being able to reprioritize the classes in the planner is a core feature of this design.
+\newline
+\newline
+Feedback is given to the user about the classes scheduled, and their priorities so that they may make informed decisions in real time. When classes are added to the planner, they are colour coded according to the cards in the list. The colours are also in order of priority, with the highest priority classes appearing brighter and greener, and lower priority classes appearing less bright, and towards blue and purple tones. Classes that are not scheduled are highlighted in red on the priority list so that the user can instantly recognize that they are not included in the schedule. The user can, at any time, drag and drop the classes in the priority list to reprioritize them. As changes are made, the schedules are updated, and recoloured according to the current ordering.
+\newline
+\newline
+Within each class, each individual section may be prioritized, or removed from consideration. Each section within a card can be dragged and dropped when the card is expanded. The program still will consider each section, but will first present schedules which include the higher priority sections. Users also have to option to deselect a section. If they do not wish to schedule a section, whether it is at a bad time for them, they do not wish to have a certain instructor, or any other reason, they can click on the check icon for that section. This will change it to a red 'x' icon, and grey out that section. The planner will no longer consider this section in its schedules, unless the user toggles it to be included once again.
+
+\subsubsection{Viewing Schedules}
+Viewing the schedules was another major task of our system, and was included with a fair amount of depth in this prototype. Through our user research, we found that despite most tools presenting a weekly schedule with days represented by vertical columns, users had no trouble understanding a schedule with a horizontal orientation. Our design takes advantage of this by displaying the schedules to the user in a horizontal format, to fit all of the relevant information on screen, without clutter or causing the user to focus on understanding what is presented to them. The time slots are filled with boxes which show the course code, and section number of the class which occupies that spot. These boxes match the colours of the course cards in the priority list for quick reference, and to indicate what classes took precedence in the underlying algorithm.
+\newline
+\newline
+Much of the time, there are multiple possible schedules with are available to the user. To indicate this, arrows are shown beneath the schedule, and a counter shows the user how many schedules there are. Mousing over the arrows highlights them, and clicking on them cycles through the available schedules, so that the user can view and select the schedule that they prefer. An important feature is that all of the schedules are shown in real time, so that the user is always informed, and can see the results of their decisions instantaneously.
+
+
+\subsubsection{Detailed Information}
+Viewing detailed information is considered to be a major task of our design, but was not implemented in depth for this prototype. The usefulness to the user is dependent on real information, which would take a lot of time to implement in any capacity. Instead, this prototype focuses on how a user might access that information. Basic information, such as the course title, location, instructor, and section times is available through the expandable cards in the priority list. In our research, we found that these were the most important pieces of information to a user, assuming the course could fit in their schedule. Information beyond this can still be useful, so a "more course info" button was created. This icon when clicked pans the view down to display the detailed information. This allows it to be accessible anytime, but does not disrupt the users ability to adjust their priority list, or view the possible schedules. They can scroll around as desired to fit their process. More feedback will inform decisions on what information to include, and if the current design is good.
+
+
+\subsection{Strengths of the Prototype}
+To create the schedules for the user, an algorithm was created that created the information and renders each possible schedule, based on the actual classes in the priority list. While this was initially intended merely to lessen the work required to get a prototype working, it allowed for much further functionality such as real time scheduling, live feedback, and accurate schedules.
+\newline
+\newline
+Although there are limited classes available for this prototype, each one contains sections which occupy different times, just as real courses would. This creates a vast number of possibilities for schedules. The algorithm  takes the schedules in the priority list, and returns only the best options to the user. The highest priority class will always be scheduled. The second class will always be scheduled, unless none of its sections fit with the first priority class's sections. The third class will then be scheduled, only if it works with the first class, and the second, assuming the second works with the first. This process is repeated until either five classes are scheduled, or the end of the priority list is reached. Whenever the priority list is changed in any way, the best schedules are then updated and presented. 
+\newline
+\newline
+Within each course, each section can be prioritized. The planner will still consider each section for the course (unless it is deselected), but will present to the user the schedules that include each section, in the order that they are arranged in the card. This means that the user can see the courses that they are most interested in first, and are more likely to be given their ideal schedule first, without having to scroll through all the available options. 
+\newline
+\newline
+This algorithm also allows the colours of the cards to be updated in real time. Indicating the priority of each class is important, especially because many possible features are not implemented in this prototype. Using the scheduling algorithm, the courses that work can be updated with the correct colours both on the schedule, and on the priority list. Furthermore, feedback can be given for which classes are not included by colouring them with red. These features make for a very robust prototype, and allow for effective testing, and gathering valuable feedback on the design.
+
+
+
+
+\section{Prototype Shortcomings}
+%"Particular problems that you are aware of with your prototype (e.g., known bugs)
+In creating this prototype, some concessions had to be made. Not all possible features could be implemented, and not all included features could be explored in depth. Additionally, some bugs exist in the current state of the program, and are addressed in this section.
+
+\subsection{Features to be Added}
+
+A feature that was not included in this design was the ability to prioritize sections individually. For users to have complete control over their scheduling, they should be able to prioritize a particular section of a class at a different level than the rest. For example, they may wish to take COMP 3020 with Dr. Young, but if that is not possible, the next class they would want might be a particular psychology class. Then if that does not work, other sections of COMP 3020 may be considered. Our prototype does not include this functionality, but it would be necessary for a final version of a  scheduler using this priority list method.
+\newline
+\newline
+Another feature needed to give students full control of their planning would be a break or "black out" feature. The ability to set time slots that are unavailable for classes, such as days that a student has to be available for work, or times that they cannot commute to the university. The scheduling software would exclude these times from the planner, and not present any options that occupy those time slots with classes.
+\newline
+\newline
+"Locking" sections is another feature that a final version would include. Currently, if a user wished to include a specific section, they can deselect all other sections of that course, and give it a high priority. Instead of this multi-step process, a user could be able to click on a course in a schedule displayed, and the planner would "lock" it in, only presenting schedules to the user which included that section of that class. While functionality to this effect can be achieved with this prototype, our group would implement this feature if the design is further refined.
+\newline
+\newline
+When a course is not scheduled, it is given a red border in the priority list to indicate that it was not included. Beyond this, it would be useful to tell the user why it was not included. Some kind of icon or mouse over text to tell the user specifically why a class was not scheduled would be very useful, and would allow them to reprioritize their schedules more effectively.
+\newline
+\newline
+As mentioned earlier, a comprehensive course detail section would be included in a future release of this software. As is it, the information is not useful to the user. A full version would include all relevant information available for a class, as well as for each instructor. 
+\newline
+\newline
+To make this software more useful, It would be able to output CRNs of any schedule. The user could then use those numbers to register for a schedule exactly as it appear in their planner. Even without this feature, the benefits of the software can be seen, and the design improved upon.
+\newline
+\newline
+The current design does not include many safety features for the user. Currently, if the user deletes a class, they must add it again, and drag it to its previous position to "undo" their action. A more robust design would include an undo feature so that the user can revert quickly, or compensate for mistakes. The red highlight around the delete button was deemed enough safety for the prototype, as all deletions can be recovered, but methods of confirmation may also be explored in future iterations.
+\newline
+\newline
+Finally, a save feature would be included in a final release of this software. Whether it would be achieved with cookies, user accounts, or other methods, some sort of feature to allow a user to save the state would be important. There are many reasons that a user would want to use the software in more than one session, so such a feature must be developed before a final release.
+
+
+\subsection{Known Bugs}
+The line separating the priority list and the schedule can be adjusted to provide more room according to the user's preferences. Unfortunately, in this prototype, when the line is dragged, it suddenly jumps to the left. This could not be resolved in a timely manner, and thus the bug is in the current state of the prototype. This does not have any other adverse effects on the software.
+\newline
+\newline
+In very rare circumstances, sometimes course cards become unable to be dragged and repositioned. The cause of this bug could not be determined, as it could not reliably be reproduced. The bug happens very infrequently, and currently refreshing the page resolves the issue. The planner is also reset to the initial state, which is undesirable, so this bug would not be acceptable in any formal release.
+\newline
+\newline
+When the browser window is made to be small, not all information can be displayed at once. To accommodate this, the orientation of the schedule is changed to a vertical orientation. This works well, except that eventually the text in the boxes spills out of the boundaries of the boxes. For this prototype this was not a major concern, as the design is intended to be used in a view large enough for the horizontal orientation. In future development, however, more constraints would be given to the interface so that even in extreme cases, the design is still usable.
+
+
+
+
+
+\end{document}

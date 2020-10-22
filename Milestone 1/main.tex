@@ -1,0 +1,329 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for horizontal lines, change thickness here
+	
+	\center % Centre everything on the page
+	
+	%------------------------------------------------
+	%	Headings
+	%------------------------------------------------
+	
+	\textsc{\LARGE University of Manitoba}\\[1.5cm] % Main heading such as the name of your university/college
+	
+	\begin{figure}
+	    \centering
+	    \includegraphics[width=1in]{uofmlogo.png}
+	    \label{fig:uofm}
+	\end{figure}
+	
+	\textsc{\Large COMP 3020}\\[0.5cm] % Major heading such as course name
+	
+	\textsc{\large Human Computer Interaction I}\\[0.5cm] % Minor heading such as course title
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\HRule\\[0.4cm]
+	
+	{\huge\bfseries Group 20: Milestone 1}\\[0.4cm] % Title of your document
+	
+	\HRule\\[1.5cm]
+	
+	%------------------------------------------------
+	%	Author(s)
+	%------------------------------------------------
+	
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushleft}
+			\large
+			\textit{Authors}\\
+			Skylar \textsc{Greenslade}, 7795032\\
+			Charle \textsc{Amao}, 7763900\\% Your name
+			Sanjay \textsc{Abraham}, 7793952\\
+			Seunghwan \textsc{Youn}, 7846681
+			
+		\end{flushleft}
+	\end{minipage}
+	~
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushright}
+			\large
+			\textit{Professor}\\
+			Dr. Jim \textsc{Young} % Supervisor's name
+		\end{flushright}
+	\end{minipage}
+
+	
+	\vfill\vfill\vfill % Position the date 3/4 down the remaining page
+	
+	{\large\today} % Date, change the \today to a set date if you want to be precise
+
+	\vfill % Push the date up 1/4 of the remaining page
+	
+\end{titlepage}
+\newpage
+
+\section{Project Idea}
+Our project idea is a new course registration website targeted towards all University of Manitoba students (undergraduate, graduate, and post-graduate). This project is a response to students' frustrations with Aurora's user-interface, particularly towards its course registration functionality. Therefore, a core focus of the project will be to create a new course registration website that presents a simple and intuitive user-interface that will be easy to learn for first-year students. The new website will also have new functionality such as a \textit{schedule planner} feature that allows students to visually see their weekly schedule and add courses to a 'plan'; this allows students to experiment until they arrive at their optimal schedule. This website will be used by University students between their registration start date and the voluntary-withdrawal date. However, most traffic for this website will be expected during the months of July, August, and September; because most students are returning to school in the fall. Although we expect students to devote an adequate amount of time to plan their course schedules, we intend for last-minute schedule planning to be quick and painless through the website's simple and intuitive interface. Lastly, we expect students to use this website while at their preferred workstations. 
+
+
+\section{Stakeholders}
+
+\subsection{Primary Stakeholders}
+\begin{enumerate}
+    \item Students: Students from the University of Manitoba are the target demographic of this project. They will have had experience with course schedules during their time at high-school and University and should require minimum or no assistance to use the new course registration website. The students are expected to be at least 18 years old and are more technologically capable than average.
+    \item University Network Administrators: Network Administrators are essential stakeholders of the new website. They assist students with any issues they have with the website, therefore they should be very familiar with the new website's front-end and back-end. Ideally, they will have had experience with Aurora in order to ease the transition from it to the new website.
+    \item Student Advisors: Student advisors are primary stakeholders because they will be directly affected with the introduction of a new course registration website. They will have already have extensive experience with courses within their departments but will have to undergo training on the new website in order to advise students. 
+\end{enumerate}
+
+\subsection{Secondary Stakeholders}
+\begin{enumerate}
+    \item Professors: Professors will have the most knowledge about the courses they teach and manage. They will occasionally have to use the new website in order to input the courses they are teaching into the system. This demographic is likely to be at least 30 years old and more technologically capable than average.
+    \item Parents of Students: Parents of students will likely have no experience with Aurora or the new website but will likely have background knowledge of creating course schedules if they attended university. Parents of students will be impacted by this project if their son or daughter asks them for help when registering for the first time. Therefore, the user interface needs to be simple and intuitive for the parents of students as well. This demographic is likely to be in the 40-50 years old age range and less technologically capable than average.
+\end{enumerate}
+
+\subsection{Tertiary Stakeholders}
+\begin{enumerate}
+    \item University Administrators/Leadership: The administrators will not be users of the new website although they will still be affected by the success or lack of success of the project's implementation; this is because a bad course registration/scheduling website will have some effect on the University's reputation and attendance numbers. Ideally, this demographic will have graduated from university or college and will therefore know what course registration is like for students.
+    \item Group 20 Developers: We are a tertiary stakeholder as we are still impacted with the launch of the new website even if we are not frequent users of the program; unless, the full version is released while we are still in school. Although we are not users, we are still concerned with the success and functionality of the project.
+\end{enumerate}
+
+\section{User Research}
+The three methods of user research selected by our group were Fly on the Wall, User Interviews, and Paper Prototyping. These methods each had a different focus which helped to provide a broad range of information. The Fly on the Wall method was chosen to gain insight into more potential users' process of planning a schedule, and what challenges they faced. This provided a very in depth understanding of users with different processes than our team members. User Interviews were an effective way to learn about many details of what users may look for in a scheduling program, what their priorities are, and what shortcomings exist in the university's website. This method also provided the ability to gather information from a larger group of users, as it did not take as much time to conduct, and did not require any extra work for the participant. Finally, the Paper Prototyping method was chosen as a way to test out a different interface than what is available. Using a simple tactile version of a graphical schedule allowed the researcher to observe how a participant might try to use a similar interface, and if such an interface would be conducive to how they already visualize and plan their schedules. Between these three methods, our group will have gathered thorough information on how users currently plan their schedules, what information is important to them, and how to design an interface which is understandable and fits with the needs of the user. 
+
+\subsection{Method 1: Fly on the Wall}
+We have selected the Fly on the wall research method because of the familiarity all of us already have with Aurora; it is hard for us to fully criticize Aurora because we have been desensitized to some of its faults. The advantage of the fly on the wall method is that it allows us to see a variety of new perspectives and experience Aurora through the lens of a first-time user. The new user's different perspective will help us gain more insights that would have likely not come on their own. The first step in our method was to tell the test users to assume that they were first-year engineering students. This means that they are restricted to a list of 12 courses to take for their first year. The next step was to tell them that their goal was to create their ideal winter term through Aurora, after which we would observe. Both of our test users have never used the website. We also performed an extra fly on the wall observation on one of the test users who happened to be a University of Winnipeg student. We asked her to again create their ideal winter term, but this time through the University of Winnipeg's website. We were curious to see the system U of W students were using to register and plan for courses.\newline
+\newline
+We observed that one of the users tried to read guidelines on how to register through Aurora. But they found the guideline too complicated and hard to read. So, the user just started to register for courses without first reading the guide. Another observation was that both users clicked on 'Add or Drop Classes' first but were annoyed that this did not allow you to search for courses. One user encountered a problem with the course ‘GMGT 2000’ because there were 7 ‘management’ subjects on the 'Look up classes' drop-down menu, so the user did not know which one the course belonged to. It took a long time for that user to find the correct subject. Another observation was that both users found it confusing to differentiate between a lecture (e.g. A01) and a lab (e.g. B01).  Both users were annoyed at having to go back multiple web pages just to look at different courses.\newline
+\newline
+From the U of W observation, we learned that students can search for courses directly through a search bar. Unlike aurora, the switching between semesters was very easy for the user by using a switch on the sidebar. There was also a course planner which allowed the user to add courses to a 'planner', which automates much of the course-conflict checking. Once the user is happy with the given schedule, the user can simply click a button to register for all the classes. After that a course advisor can review the schedule and leave notes online for the user to review. 
+ 
+
+
+\subsection{Method 2: User Interviews}
+User interviews were selected as a method of investigation primarily because it was assumed that the user group already talks about their course scheduling habits and systems with their peers. This lead to the hypothesis that the user group would be able to accurately articulate their feelings about the task of course scheduling. This hypothesis was proven correct, since simple questions yielded rich answers, which often correlated with other participant’s answers. The participants’ feedback was compiled and abstracted into patterns and described in the following paragraphs. 
+\newline
+\newline
+Prior to conducting the research, a list of 17 questions was prepared as guideline for the interviewers to use. 6 participants were interviewed – Three from the Faculty of Engineering, two were first year students, and one was from the University of Winnipeg.
+\newline
+\newline
+Through this study, several key points were unanimously agreed upon by all participants – such as, Aurora course scheduling is not intuitive and learnable; Aurora requires more navigation than is desired (between terms, between adding classes, looking up classes, between courses provided by different faculties etc.); Aurora course registration requires taxing mental effort in terms of considering combinations and variations of course schedules. Among findings that were not unanimous were those that involved how users went about prioritizing and selecting their schedules. Five out of six users prioritize courses that are mandatory and required for graduation. The majority of participants commented on using \textit{ratemyprofessor.com} to choose between sections of the same course. A few participants commented on prioritizing shorter days with less breaks. Even fewer participants commented on prioritizing locations of classes to avoid long walking distances. Regarding the system employed by users to register for courses: 3 users said they printed out blank timetables to write out their course options; 1 user said they first make a priority list of courses they want for the semester. In general, it was understood that the users visualized their schedules as a weekly timetable. 
+
+
+\subsection{Method 3: Paper Prototyping}
+The third method of gathering user research was the IDEO Paper Prototyping method. A simplified version of a possible interface was created with the purpose of testing out some basic concepts involved with the future design. A 9x11 page was divided into five columns, one for each weekday, and hour long time slots were represented by horizontal rows. On clear plastic sheets, labelled stickers were placed to cover the time slots which a class would take. The research participant would be able to overlay the various sections for various classes to visually determine what time conflicts would occur, and how a weekly schedule would look with the various options they had. The goal of this research method was multifaceted. First of all, it would provide insight into how understandable and learnable a graphical interface of this style would be. Secondly, the way that users used the overlays would show how they would like to arrange and view the information available to them. Finally, it also showed what the ideal process would be for a user using this interface, and what they prioritized in real time, based on the choices they made. 
+\newline
+\newline
+When conducting the research, a participant was given a list of ten first year engineering courses. Each course had two lecture options, and if lab sections were separate from the lecture sections, two were available to be selected from. The participant was instructed to create the ideal schedule for one semester, including five classes from the options provided. The user would ask the group member conducting the research for a specific class, and they were presented with the relevant plastic sheets. Observing the participants, we found that they started by adding their most desired classes at their most desired times, and continued from there. They prioritized creating a schedule that had few breaks throughout the day, and avoided 8:30am classes if possible. When a class conflicted with another, they would set the conflicting class aside, and continue searching for more classes that might fit their schedule. Once a class was discarded, the participants chose not to use it again. If the participants found that a particular lab or class section was causing a lot of conflicts, they would substitute it, and try to include the first classes that they tried, but could not fit.\newline 
+\newline
+The participants stated that they enjoyed using the system, in contrast to their frustrating experiences with Aurora. They did not take any extra time to adjust to the way that the classes were presented to them, and confirmed that it immediately was understandable, and was relatable to their mental model of a weekly schedule. This method was fast, taking between five and ten minutes to complete a schedule. After completing their schedule, the participants then tried to optimize their schedules, but found that they were able to create fairly optimal schedules on their first attempt. Understanding the usability of this model, and how the users prioritize their process will help to create a successful design.
+
+\section{Requirements}
+
+\begin{tabular}{ |p{0.3cm}||p{7cm}|p{7cm}|  }
+ 
+ 
+ 
+ \hline
+&&
+  \\
+ &
+\Large {Requirement }
+  &
+  \Large {Verification Method}
+  \\
+&&
+  \\
+  
+ \hline
+  &
+\multicolumn{2}{|l|}{\large Data}
+\\
+\hline
+1.
+&
+The app must have access to all course information such as times, locations, sections, instructors, pre-requisite courses.
+\newline
+Justification: This data is crucial for the app.
+& 
+N/A.
+\\
+
+\hline
+ &
+\multicolumn{2}{|l|}{ \large Functional}
+  \\
+  \hline
+
+1. 
+ &
+ The app shall generate schedule options based on user input.
+ \newline
+Justification: This is the main function of the app.
+ & 
+ Visually verifiable.
+ \\
+ 2.
+ &
+ The app shall allow users to experiment with different schedules.
+ \newline
+Justification: This function is expected to maximize utility for the app.
+ &
+ Schedule combinations can be viewed and toggled through with few clicks (less than 2 clicks).
+ \\
+ 3.
+ &
+ The app shall provide the user with the user approved schedule as a list of Course Registration Numbers (CRN).
+ \newline
+Justification: This function allows the user to register using Aurora without planning the schedule on Aurora.
+ &
+ Visually verifiable. 
+
+ \\
+ 4.
+ & 
+ The app shall inform the user of the necessary pre-requisites for any given course that the user is considering to register for.
+ \newline
+Justification: This function improves utility for the app.
+ & 
+ Visually verifiable.
+ \\
+ \hline
+ &
+\multicolumn{2}{|l|}{\large Usability}
+\\
+  \hline
+1.
+&
+The app shall implement a visualization method for the user's schedule that fits with the users mental model of their personal schedules.
+\newline
+Justification: This improves the memorability of the app. 
+& 
+User research methods such as prototyping and interviewing should reveal that the user has no objections to how the schedule is visualized.
+\\
+2.
+&
+The app shall have a enable the user to visualize and resolve scheduling  conflicts with little mental effort.
+\newline
+Justification: This improves the utility of the app. 
+& 
+User research methods such as prototyping and scenario testing should reveal that no pen and paper is required to manage conflicting course information.
+ \\
+ 3.
+ & 
+ The app shall have easy to view course descriptions.
+ \newline
+Justification: This improves utility for the app. 
+ & 
+ Visually verifiable. 
+\\
+
+4.
+&
+The app shall fulfill the usability goal of being easy to learn. \newline
+Justification: This is crucial since there is always a large group that are first time users. 
+& 
+User research methods such as prototyping and scenario testing should reveal that no instructions need to be provided to use the app.
+\\
+
+5.
+&
+The app shall provide the user with the user's approved schedule as a downloadable visual representation.
+\newline
+Justification: This allows the user to refer back to their schedule easily. 
+& 
+Visually verifiable.
+\\\hline
+
+
+
+\end{tabular}
+
+\newpage
+
+The following requirements are not mandatory, but ideally would be included.
+\newline
+
+\begin{tabular}{ |p{0.3cm}||p{9cm}|p{5cm}|  }
+
+ \hline
+&&
+  \\
+ &
+\Large {Requirement }
+  &
+  \Large {Verification Method}
+  \\
+&&
+  \\
+ \hline
+  &
+\multicolumn{2}{|l|}{\large Usability}
+\\
+\hline
+ 1.
+ &
+ The app could allow a user to register for all the courses from a user-determined plan all at once. 
+ 
+ &
+ Visually verifiable.
+
+ \\
+ 2.
+&
+The app could provide the user with instructor reviews for the selected courses.
+& 
+Visually verifiable.
+\\
+3.
+&
+The app could provide information about if the course is offered in the other term.
+& 
+Visually verifiable.
+\\
+\hline
+ &
+\multicolumn{2}{|l|}{\large User}
+\\
+\hline
+4.
+&
+The app could be general purpose to consider the users that will be University of Manitoba as well as other Universities' students at every level. 
+&
+N/A.
+\\
+ \hline
+  &
+\multicolumn{2}{|l|}{\large Environmental}
+\\
+\hline
+6.
+&
+The app could take into account the fact that peak registration times are the few weeks prior to semester start dates. 
+&
+N/A.
+&
+\hline
+ 
+ \end{tabular}
+ 
+ 
+\section{Scenarios}
+Based on the requirements identified in Section 4, scenarios have been produced for two users identified in Section 2. One for a fifth year engineering student who has only eight classes left to take, and another for a new University of Manitoba student planning their first schedule.
+
+\subsection{Scenario 1:}
+A fifth year engineering student is almost ready to register for their last year of courses. They check their planner and see the eight classes they have to take this year. Logging into their computer morning of the day before registration, they select the aforementioned courses and see how they might fit together. Choosing the 10:30am lecture time over the 8:30am lecture time for a class causes conflicts with another course, but it is worth finding a workaround to not have to drive through rush hour. Quickly selecting an alternate schedule allows for this change to be made. There is room to move the Friday afternoon lab to Wednesday for an earlier start to the weekend, and having not classes on Tuesday and Thursday afternoons fits with their part-time job. The student quickly swaps a fall semester course with one of the challenging courses from the winter to have a more balanced course load. Satisfied with the layout of the schedule, the student records the CRNs of the courses and leaves the computer to enjoy one of the final days of summer, confident in their plans for the year.
+
+
+\subsection{Scenario 2:}
+ A first-year student is trying to register for a course through the university's online system. The student has never used the web site before and tries to use it without help from others. Because the student has no idea how to use it, after logging in to the system they read the guidelines on how to use the web site and register for courses. Now the student knows the procedure of registering for courses and tries to register for a specific class. The student is confused by which subject belongs to which class, so the student has to search all subjects that they think it may belong to. After registering for all of their courses, the student realizes that there are long time periods in-between classes. The student drops a section of a class and tries to register for a different section but that section is already full. The student takes a couple of hours to register for all their courses and the eventually realizes that course registration is hard and that the website for registration is inconvenient for first-time users.
+\end{document}
